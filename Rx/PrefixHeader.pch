@@ -1,0 +1,11 @@
+//
+//  PrefixHeader.pch
+//  Rx
+//
+//  Created by Mehul Bhavani on 21/09/17.
+//  Copyright © 2017 mehulb. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+#define NSLog(FORMAT, ...) printf("%s[L:%d]%s\n", __PRETTY_FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
